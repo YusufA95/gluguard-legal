@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GluGuard — Gizlilik Politikası</title>
+<style>
+  :root { --brand: #00A651; --ink: #1a1a1a; --muted: #555; --line: #e6e6e6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--ink); line-height: 1.6; background: #fff; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { border-bottom: 4px solid var(--brand); padding-bottom: 16px; margin-bottom: 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.7rem; }
+  h2 { margin-top: 32px; font-size: 1.2rem; color: var(--brand); }
+  .meta { color: var(--muted); font-size: .92rem; }
+  a { color: var(--brand); }
+  ul { padding-left: 1.2rem; }
+  li { margin: 6px 0; }
+  .note { background: #f4faf6; border: 1px solid #cdeede; border-radius: 10px; padding: 12px 16px; font-size: .95rem; }
+  footer { margin-top: 48px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GluGuard — Gizlilik Politikası</h1>
+    <p class="meta"><strong>Son güncelleme:</strong> 18 Haziran 2026<br>
+    <strong>Geliştirici:</strong> Yusuf Abagay · <strong>İletişim:</strong> <a href="mailto:yubaylays@gmail.com">yubaylays@gmail.com</a></p>
+  </header>
+
+  <p>GluGuard ("uygulama"), çölyak ve gluten hassasiyeti olan kullanıcıların güvenli mekanları
+  bulup paylaştığı bir mobil uygulamadır. Bu politika hangi verileri, neden ve kimlerle
+  işlediğimizi açıklar.</p>
+
+  <h2>Topladığımız veriler</h2>
+  <ul>
+    <li><strong>Hesap bilgileri:</strong> e-posta adresi, kullanıcı adı, görünen ad, beslenme türü
+      (çölyak / gluten hassasiyeti / diğer), isteğe bağlı biyografi ve profil fotoğrafı. Parolalar
+      doğrulama sağlayıcımız tarafından şifreli (hash'li) saklanır.</li>
+    <li><strong>Konum:</strong> Yakınındaki mekanları haritada göstermek için cihaz konumu. İzni
+      reddedebilir ve uygulamayı yine de şehir arayarak kullanabilirsin. Konumun sürekli takip edilmez.</li>
+    <li><strong>Kamera ve fotoğraflar:</strong> Ürün etiketi/barkodunu taramak için çektiğin fotoğraflar.
+      Etiket fotoğrafı, içeriğini analiz etmek üzere bir yapay zekâ sağlayıcısına (Google Gemini)
+      gönderilir. Giriş yapmışsan tarama sonuçların geçmişinde saklanır.</li>
+    <li><strong>Kullanıcı içeriği:</strong> Yazdığın yorumlar, güvenlik/yemek puanları, çapraz bulaşma
+      notları, yüklediğin fotoğraflar ve kaydettiğin mekan listeleri.</li>
+    <li><strong>Bildirim jetonu:</strong> Bildirimleri etkinleştirirsen, push bildirimi göndermek için
+      cihaz jetonu.</li>
+  </ul>
+  <p>Reklam amacıyla veri toplamıyor ve verini satmıyoruz.</p>
+
+  <h2>Verileri kimlerle paylaşırız (hizmet sağlayıcılar)</h2>
+  <ul>
+    <li><strong>Supabase</strong> — veritabanı, kimlik doğrulama, dosya depolama (AB/İrlanda).</li>
+    <li><strong>Google (Gemini API)</strong> — etiket fotoğraflarının yapay zekâ ile okunması.</li>
+    <li><strong>Open Food Facts</strong> — barkodla ürün içeriği sorgusu.</li>
+    <li><strong>OpenStreetMap / Photon / Overpass / OpenFreeMap</strong> — harita, arama ve mekan keşfi.</li>
+    <li><strong>Stripe</strong> — (abonelik etkinleştirildiğinde) ödeme işlemleri; kart bilgileri yalnızca
+      Stripe tarafından işlenir, bizde saklanmaz.</li>
+    <li><strong>Expo</strong> — push bildirimi iletimi.</li>
+  </ul>
+
+  <h2>Saklama ve silme</h2>
+  <p>Verini hesabın aktif olduğu sürece saklarız. Hesabını ve ilişkili tüm verilerini (yorumlar,
+  fotoğraflar, kaydedilen listeler, tarama geçmişi ve diyet bilgin) iki şekilde kalıcı olarak
+  silebilirsin:</p>
+  <ul>
+    <li><strong>Uygulama içinden:</strong> Profil sekmesi → <strong>Hesabı sil</strong>. İşlem geri
+      alınamaz ve hemen başlar.</li>
+    <li><strong>Web'den / e-posta ile:</strong>
+      <a href="delete-account.html">silme talimatları sayfası</a> ya da
+      <a href="mailto:yubaylays@gmail.com">yubaylays@gmail.com</a>.</li>
+  </ul>
+  <p>Silme; depolama alanındaki fotoğraflarını ve veritabanı kayıtlarını kapsar; talebi en geç
+  <strong>30 gün</strong> içinde tamamlarız. Yasal yükümlülük gereği tutmamız gereken kayıtlar (örn.
+  ödeme/fatura kayıtları) ilgili yasal süre boyunca saklanabilir.</p>
+
+  <h2>Çocukların gizliliği</h2>
+  <p>Uygulama 16 yaşından küçük çocuklara yönelik değildir ve bilerek onlardan veri toplamayız
+  (AB'de geçerli dijital rıza yaşı; bazı ülkelerde 13–16 arası değişebilir).</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politikayı zaman zaman güncelleyebiliriz; önemli değişiklikleri uygulama içinde veya bu
+  sayfada duyururuz.</p>
+
+  <h2>İletişim</h2>
+  <p>Sorular için: <a href="mailto:yubaylays@gmail.com">yubaylays@gmail.com</a></p>
+
+  <footer>© 2026 Yusuf Abagay — GluGuard</footer>
+</div>
+</body>
+</html>
